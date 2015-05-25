@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        tools:context=".PregledOcitanja"
+        android:id="@+id/linearLayout"
+        android:background="#6fe1e1ff">
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/boja"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:background="#137132"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="21.01.2015."
+            android:id="@+id/datumText"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="A202"
+            android:id="@+id/prostorijaText"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:layout_below="@+id/vrijemePocetakText"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="13:03:56"
+            android:id="@+id/vrijemePocetakText"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_below="@+id/datumText"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/slika"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/datumText"
+            android:layout_alignEnd="@+id/datumText" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Datum:"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/boja"
+            android:layout_toEndOf="@+id/boja"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Vrijeme:"
+            android:id="@+id/textView2"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@+id/boja"
+            android:layout_toEndOf="@+id/boja"
+            android:paddingLeft="4dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Prostorija:"
+            android:id="@+id/textView3"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/textView2"
+            android:layout_toRightOf="@+id/boja"
+            android:layout_toEndOf="@+id/boja"
+            android:paddingLeft="4dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/bojaGore"
+            android:background="#137132"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/boja"
+            android:layout_toEndOf="@+id/boja" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="13:58:22"
+            android:id="@+id/vrijemeKrajText"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_below="@+id/datumText"
+            android:layout_toRightOf="@+id/crticaText"
+            android:layout_toEndOf="@+id/crticaText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/crticaText"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_below="@+id/datumText"
+            android:layout_toRightOf="@+id/vrijemePocetakText"
+            android:layout_toEndOf="@+id/vrijemePocetakText" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

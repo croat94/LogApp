@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LogApp</string>
+    <string name="action_ime_i_prezime">Ime i prezime</string>
+    <string name="pregled_ocitanja">Pregled mojih očitanja</string>
+    <string name="novo">Novo očitanje</string>
+    <string name="title_activity_novo_ocitanje">Novo Očitanje</string>
+    <string name="title_activity_pregled_ocitanja">Pregled Očitanja</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_pocni">Početak čišćenja</string>
+    <string name="button_zavrsi">Kraj čišćenja</string>
+    <string name="take_photo">Uslikaj fotografiju</string>
+    <string name="pregled_ocitanja_naslov">Pregled očitanja</string>
+    <string name="sync_button">SYNC</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="text_view_ime">Ime</string>
+    <string name="text_view_url">URL</string>
+    <string name="text_view_prezime">Prezime</string>
+    <string name="title_activity_login">Ime i prezime</string>
+    <string name="title_activity_xmlfile">XMLFile</string>
+    <string name="url">URL</string>
+    <string name="title_activity_url">Unesite URL</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pregled_skupnih_ocitanja">PregledSkupnihOcitanja</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.zavrsni.jasamrafoooo.logapp.NovoOcitanje"
+    android:background="#212121">
+
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/button"
+        android:id="@+id/buttonPocni"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/button_pocni"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonPocni"
+        android:typeface="sans" />
+
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/button"
+        android:id="@+id/buttonZavrsi"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_zavrsi"
+        android:onClick="onButtonZavrsi"
+        android:layout_below="@+id/buttonPocni"
+        android:layout_centerHorizontal="true"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textTag"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slikaProstorije"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/buttonZavrsi" />
+
+</RelativeLayout>

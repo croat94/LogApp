@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <EditText
+            android:id="@+id/editUrl"
+            android:inputType="textEmailAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_view_url"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/button"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Default URL"
+            android:id="@+id/button2"
+            android:onClick="onClickDefault"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
