@@ -8,13 +8,11 @@ import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Environment;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import java.io.File;
@@ -127,7 +125,7 @@ public class MainActivity extends ActionBarActivity {
                     "Posljednja aktivnost nije završena!" +
                     " Želite li nastaviti s prijenosom očitanja na server?");
         }else{
-            Intent i = new Intent(MainActivity.this, XMLFile.class);
+            Intent i = new Intent(MainActivity.this, UploadNaServer.class);
             startService(i);
         }
     }
@@ -142,7 +140,7 @@ public class MainActivity extends ActionBarActivity {
             alert.setIcon(android.R.drawable.ic_dialog_alert);
                 alert.setButton2("Nastavi", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                Intent i = new Intent(MainActivity.this, XMLFile.class);
+                                Intent i = new Intent(MainActivity.this, UploadNaServer.class);
                                 startService(i);
                             }
                         }

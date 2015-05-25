@@ -29,7 +29,7 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.ByteArrayOutputStream;
 
-public class XMLFile extends IntentService {
+public class UploadNaServer extends IntentService {
 
     DBHelper mydb;
     public int brojRedova;
@@ -48,8 +48,8 @@ public class XMLFile extends IntentService {
     private static final int uniqueID = 45612;
     public String url;
 
-    public XMLFile() {
-        super("XMLFile");
+    public UploadNaServer() {
+        super("UploadNaServer");
     }
 
     @Override
@@ -123,8 +123,8 @@ public class XMLFile extends IntentService {
                     flag = true;
                     int brojUploadanih = (i - brojRedova + brojNeUploadanih + 1);
                     buildNotification("Poslano "+ brojUploadanih  + "/" + brojNeUploadanih,
-                            "Poslano",
-                            brojUploadanih + "/" + brojNeUploadanih);
+                            "Slanje",
+                            "Poslano: " + brojUploadanih + "/" + brojNeUploadanih);
                     if (!rs.isClosed()) {
                         rs.close();
                     }
