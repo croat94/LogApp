@@ -1,16 +1,11 @@
 package com.zavrsni.jasamrafoooo.logapp;
 
-import android.app.Activity;
 import android.app.IntentService;
-import android.app.Notification;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Environment;
@@ -69,7 +64,6 @@ public class UploadNaServer extends IntentService {
             flag = false;
             try {
 
-                // 1. create HttpClient
                 for (i = 1; i < brojRedova; i++) {
                     rs = mydb.getData(i);
                     rs.moveToFirst();
@@ -123,7 +117,7 @@ public class UploadNaServer extends IntentService {
                     flag = true;
                     int brojUploadanih = (i - brojRedova + brojNeUploadanih + 1);
                     buildNotification("Poslano "+ brojUploadanih  + "/" + brojNeUploadanih,
-                            "Slanje",
+                            "Slanje podataka na server",
                             "Poslano: " + brojUploadanih + "/" + brojNeUploadanih);
                     if (!rs.isClosed()) {
                         rs.close();

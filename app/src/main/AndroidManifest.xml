@@ -79,10 +79,6 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Dialog" >
         </activity>
-        <activity
-            android:name=".PregledSkupnihOcitanja"
-            android:label="@string/title_activity_pregled_skupnih_ocitanja" >
-        </activity>
     </application>
 
 </manifest>

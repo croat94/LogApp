@@ -1,7 +1,5 @@
 package com.zavrsni.jasamrafoooo.logapp;
 
-import java.util.HashMap;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -13,15 +11,13 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "MyDBName.db";
     public static final String READINGS_TABLE_NAME = "ocitanja";
-    public static final String READINGS_COLUMN_ID = "id";
+    public static final String READINGS_COLUMN_ID = "_id";
     public static final String READINGS_COLUMN_PROSTORIJA = "prostorija";
     public static final String READINGS_COLUMN_VRIJEME_POCETAK = "vrijemepocetak";
     public static final String READINGS_COLUMN_DATUM = "datum";
     public static final String READINGS_COLUMN_VRIJEME_KRAJ = "vrijemekraj";
     public static final String READINGS_COLUMN_UPLOADANO = "uploadano";
     public static final String READINGS_COLUMN_USERID = "userid";
-
-    private HashMap hp;
 
     public DBHelper(Context context)
     {
